@@ -7,9 +7,24 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type":"git",
-    "url":"https://github.com/diegolucasilva/semantic-version-test.git"
+    "type": "git",
+    "url": "https://github.com/diegolucasilva/semantic-version-test.git"
+  },
+  "release": {
+    "repositoryUrl": "<RepoURL>",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/changelog",
+      "@semantic-release/git"
+    ],
+    "branch": "master"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2"
+  }
 }
