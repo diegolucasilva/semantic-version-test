@@ -7,6 +7,12 @@ docker run -it ubuntu
 
 ## Instalar os pacotes: 
     apt-get update; apt-get install -y nodejs npm git; npm i -g npx
+   
+## Configurando commitlint
+	npm install -g @commitlint/cli @commitlint/config-angular
+	echo "module.exports = {extends: ['@commitlint/config-angular']}" > ~/commitlint.config.js
+	echo "cat "$1" | commitlint; exit $?" > ~/githooks/commit-msg
+  	git config --local core.hooksPath ~/githooks/
 
 ## Configurar git:
 	git config --global user.email"diego.lucasilva@gmail.com"
@@ -14,12 +20,6 @@ docker run -it ubuntu
 	git remote add origin git@github.com:diegolucasilva/semantic-version-test.git
 	cd ~/.ssh/ ; ssh-keygen; cat ~/.ssh/id_rsa.pub
 	ssh -T git@github.com
-
-## Configurando commitlint
-	npm install -g @commitlint/cli @commitlint/config-angular
-	echo "module.exports = {extends: ['@commitlint/config-angular']}" > ~/commitlint.config.js
-	echo "cat "$1" | commitlint; exit $?" > ~/githooks/commit-msg
-  	git config --local core.hooksPath ~/githooks/
 
 ## Para publicar: 
     npx semantic-release --no-ci
