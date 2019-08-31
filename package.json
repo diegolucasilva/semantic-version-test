@@ -1,15 +1,6 @@
 {
   "name": "teste",
-  "version": "1.0.0",
   "description": "Get random starwars names",
-  "main": "src/index.js",
-  "scripts": {
-    "test": "echo  \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/diegolucasilva/semantic-version-test.git"
-  },
   "release": {
     "repositoryUrl": "https://github.com/diegolucasilva/semantic-version-test.git",
     "plugins": [
@@ -25,8 +16,6 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
