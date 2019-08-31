@@ -13,7 +13,7 @@ docker run -it ubuntu
 	cd ~/.ssh/ ; ssh-keygen; cat ~/.ssh/id_rsa.pub
 	ssh -T git@github.com
 
-### Configurando commitlint
+## Configurando commitlint
 	npm install -g @commitlint/cli @commitlint/config-angular
 	echo "module.exports = {extends: ['@commitlint/config-angular']}" > ~/commitlint.config.js
 	echo "cat "$1" | commitlint; exit $?" > ~/githooks/commit-msg
