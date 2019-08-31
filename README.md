@@ -14,9 +14,12 @@ docker run -it ubuntu
 	ssh -T git@github.com
 
 
-## Clone o projeto e teste commitlint:
+## Teste commitlint:
   ```echo 'foo: bar' | commitlint```
 
+## Configurando git hook commitlint:
+	echo "cat "$1" | commitlint; exit $?" > ~/githooks/commit-msg
+  	git config --local core.hooksPath ~/githooks/
 
 
 ## Para publicar: 
@@ -44,5 +47,8 @@ docker run -it ubuntu
 	npm install -g @commitlint/cli @commitlint/config-angular
 	echo "module.exports = {extends: ['@commitlint/config-angular']}" > ~/commitlint.config.js
 	echo 'hello world' | commitlint
+
+
+	
 
     
