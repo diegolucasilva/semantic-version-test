@@ -1,5 +1,7 @@
 # semantic-version-test
 
+Na máquina do dev só é necessário instalar o noe e configurar o commitlint.
+
 ## Imagem utilizada: 
 docker run -it ubuntu
 
