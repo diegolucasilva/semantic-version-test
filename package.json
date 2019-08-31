@@ -1,8 +1,7 @@
 {
-  "name": "teste",
+  "name": "semantic-version-general",
   "version": "1.0.0",
-  "description": "Get random starwars names",
-  "main": "src/index.js",
+  "description": "Semantic version general generator",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
