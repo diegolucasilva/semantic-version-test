@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/diegolucasilva/semantic-version-test/compare/v2.0.0...v2.1.0) (2019-08-31)
+
+
+### Features
+
+* new feature test ([5aa0b3b](https://github.com/diegolucasilva/semantic-version-test/commit/5aa0b3b))
+
 # [2.0.0](https://github.com/diegolucasilva/semantic-version-test/compare/v1.0.0...v2.0.0) (2019-08-31)
 
 
