@@ -37,4 +37,7 @@ docker run -it ubuntu
     npm i -D semantic-release@next @semantic-release/git@next @semantic-release/commit-analyzer@next @semantic-release/release-notes-generator@next @semantic-release/npm@next @semantic-release/changelog@nex
     npm install -D commitizen
     npm i -D husky
+    npm install -g @commitlint/cli @commitlint/config-conventional
+    echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
+
     
