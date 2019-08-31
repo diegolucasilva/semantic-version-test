@@ -34,7 +34,6 @@ docker run -it ubuntu
 ### Configurando commitlint
 	npm install -g @commitlint/cli @commitlint/config-angular
 	echo "module.exports = {extends: ['@commitlint/config-angular']}" > ~/commitlint.config.js
-	echo 'hello world' | commitlint
 	echo "cat "$1" | commitlint; exit $?" > ~/githooks/commit-msg
   	git config --local core.hooksPath ~/githooks/
 
