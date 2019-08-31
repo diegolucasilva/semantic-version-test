@@ -13,20 +13,8 @@ docker run -it ubuntu
 	cd ~/.ssh/ ; ssh-keygen; cat ~/.ssh/id_rsa.pub
 	ssh -T git@github.com
 
-
-## Teste commitlint:
-  ```echo 'foo: bar' | commitlint```
-
-## Configurando git hook commitlint:
-	echo "cat "$1" | commitlint; exit $?" > ~/githooks/commit-msg
-  	git config --local core.hooksPath ~/githooks/
-
-
 ## Para publicar: 
     npx semantic-release --no-ci
-
-
-
 
 ####  Fiz mas acho que não precisa:
 ##### Instalar os modulos (versionei a pasta node_mudules pensando na esteira, não sei se é possivel deixar os módulos já na máquina tipo igual o maven no .m2)
@@ -43,10 +31,12 @@ docker run -it ubuntu
     npm install -g @commitlint/cli @commitlint/config-conventional
     echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
     
-### Instalando commitlint global
+### Configurando commitlint
 	npm install -g @commitlint/cli @commitlint/config-angular
 	echo "module.exports = {extends: ['@commitlint/config-angular']}" > ~/commitlint.config.js
 	echo 'hello world' | commitlint
+	echo "cat "$1" | commitlint; exit $?" > ~/githooks/commit-msg
+  	git config --local core.hooksPath ~/githooks/
 
 
 	
