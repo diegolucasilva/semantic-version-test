@@ -39,5 +39,10 @@ docker run -it ubuntu
     npm i -D husky
     npm install -g @commitlint/cli @commitlint/config-conventional
     echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
+    
+### Instalando commitlint global
+	npm install -g @commitlint/cli @commitlint/config-angular
+	echo "module.exports = {extends: ['@commitlint/config-angular']}" > ~/commitlint.config.js
+	echo 'hello world' | commitlint
 
     
