@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/diegolucasilva/semantic-version-test/compare/v2.1.0...v2.1.1) (2019-08-31)
+
+
+### Bug Fixes
+
+* new fix test ([badfe60](https://github.com/diegolucasilva/semantic-version-test/commit/badfe60))
+
 # [2.1.0](https://github.com/diegolucasilva/semantic-version-test/compare/v2.0.0...v2.1.0) (2019-08-31)
 
 
