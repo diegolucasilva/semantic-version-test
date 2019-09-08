@@ -29,8 +29,8 @@ docker run -it ubuntu
       npm install
       
       
-##### Configurar token
-    export GH_TOKEN="my value"      # gerar o token no GitHub
+##### Configurar variavies
+    Configurar GH_TOKEN, GIT_AUTHOR_EMAIL, GIT_COMMITTER_EMAIL, GIT_AUTHOR_NAME, GIT_COMMITTER_NAME
 
 ##### Install os plugins manualmente: 
     npm i -D semantic-release@next @semantic-release/git@next @semantic-release/commit-analyzer@next @semantic-release/release-notes-generator@next @semantic-release/npm@next @semantic-release/changelog@nex
