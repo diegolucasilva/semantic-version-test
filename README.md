@@ -19,19 +19,19 @@ docker run -it ubuntu
 	echo "cat "$1" | commitlint; exit $?" > ~/githooks/commit-msg
   	git config --local core.hooksPath ~/githooks/
 
-## Configurar git:
-	git config --global user.email"diego.lucasilva@gmail.com"
-	git config --global user.name "Diego Lucas"
-	git remote add origin git@github.com:diegolucasilva/semantic-version-test.git
-	cd ~/.ssh/ ; ssh-keygen; cat ~/.ssh/id_rsa.pub
-	ssh -T git@github.com
-
 ## Para publicar: 
     npx semantic-release --no-ci
 
 ## Variaveis configuradas pipeline:
     GH_TOKEN, GIT_AUTHOR_EMAIL, GIT_COMMITTER_EMAIL, GIT_AUTHOR_NAME, GIT_COMMITTER_NAME
 
+
+#### Configurar git:
+	git config --global user.email"diego.lucasilva@gmail.com"
+	git config --global user.name "Diego Lucas"
+	git remote add origin git@github.com:diegolucasilva/semantic-version-test.git
+	cd ~/.ssh/ ; ssh-keygen; cat ~/.ssh/id_rsa.pub
+	ssh -T git@github.com
 
 	
 
